@@ -1,0 +1,19 @@
+.linkGoBack {
+    width: 180px;
+    border: none;
+    border-radius: 12px;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    background-color: #e8f0fe;
+    color: #1a1818;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.linkGoBack:hover {
+    background-color: #1a1818;
+    color: #e8f0fe;
+}

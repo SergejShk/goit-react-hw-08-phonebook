@@ -1,0 +1,26 @@
+.authNavSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.authNavLink {
+    font-size: 30px;
+    border: none;
+    border-radius: 12px;
+    padding: 10px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    background-color: #e8f0fe;
+    color: #1a1818;
+}
+
+.authNavLink:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.authNavLink:hover {
+    background-color: #1a1818;
+    color: #e8f0fe;
+}
