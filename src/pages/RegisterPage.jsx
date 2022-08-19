@@ -12,7 +12,7 @@ const RegisterPage = () => {
     <>
       <AuthForm
         title={'Registration'}
-        titleSubmit={'Sign in'}
+        titleSubmit={'Sign up'}
         register
         cbSubmit={handleFormSubmit}
       />
