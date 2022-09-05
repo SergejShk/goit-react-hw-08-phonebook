@@ -43,7 +43,7 @@ const ContactForm = () => {
   };
 
   return (
-    <>
+    <section className="section">
       <form className={s.addForm} onSubmit={handleSubmitForm}>
         <label className={s.formLabel}>
           Name
@@ -76,7 +76,7 @@ const ContactForm = () => {
         </button>
       </form>
       <h2 className={s.contactsForm__title}>Contacts</h2>
-    </>
+    </section>
   );
 };
 

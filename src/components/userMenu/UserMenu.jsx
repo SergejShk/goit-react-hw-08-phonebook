@@ -10,11 +10,13 @@ const UserMenu = () => {
   const handleLogOut = e => dispatch(logOutThunk());
 
   return (
-    <section className={s.userMenu__section}>
-      <p className={s.userMenu__email}>{userEmail}</p>
-      <button type="button" onClick={handleLogOut}>
-        Log out
-      </button>
+    <section className="section">
+      <div className={s.container}>
+        <p className={s.userMenu__email}>{userEmail}</p>
+        <button type="button" onClick={handleLogOut}>
+          Log out
+        </button>
+      </div>
     </section>
   );
 };

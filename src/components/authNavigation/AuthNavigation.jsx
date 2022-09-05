@@ -10,7 +10,7 @@ const AuthNavigation = () => {
         Registration
       </NavLink>
       <NavLink to="login" className={s.authNavLink} state={location}>
-        Sign in
+        Log in
       </NavLink>
     </section>
   );

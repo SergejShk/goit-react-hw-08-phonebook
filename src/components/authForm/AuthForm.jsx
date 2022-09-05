@@ -32,7 +32,7 @@ const AuthForm = ({ title, titleSubmit, register = false, cbSubmit }) => {
   };
 
   return (
-    <section>
+    <section className='section'>
       <h2 className={s.authForm__title}>{title}</h2>
       <form className={s.authForm} onSubmit={handleSubmit}>
         {register && (

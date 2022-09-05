@@ -7,7 +7,6 @@ import { getCurrentUserThunk } from 'redux/auth/authOperations';
 import PublicRoute from './PublicRoute';
 import PrivateRoute from './PrivateRoute';
 import UserMenu from './userMenu/UserMenu';
-import s from './App.module.css';
 
 const HomePage = lazy(() => import('../pages/HomePage'));
 const RegisterPage = lazy(() => import('../pages/RegisterPage'));
@@ -23,9 +22,9 @@ const App = () => {
   }, [dispatch]);
 
   return (
-    <div className={s.container}>
+    <div className="container">
       {isLoggedIn && <UserMenu />}
-      <h1 className={s.mainTitle}>Phonebook</h1>
+      <h1 className="mainTitle">Phonebook</h1>
       <Routes>
         <Route
           path="/"

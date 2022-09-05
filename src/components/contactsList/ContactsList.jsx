@@ -31,18 +31,20 @@ const ContactsList = () => {
       {isLoading ? (
         <Loader />
       ) : (
-        <ul className={s.contactsList}>
-          {filterSearchContact.map(contact => (
-            <li className={s.contactsItem} key={contact.id}>
-              <p className={s.contactName}>
-                {contact.name}: {contact.number}
-              </p>
-              <button type="button" onClick={() => removeContact(contact.id)}>
-                Delete
-              </button>
-            </li>
-          ))}
-        </ul>
+        <section className="section">
+          <ul className={s.contactsList}>
+            {filterSearchContact.map(contact => (
+              <li className={s.contactsItem} key={contact.id}>
+                <p className={s.contactName}>
+                  {contact.name}: {contact.number}
+                </p>
+                <button className={s.button} type="button" onClick={() => removeContact(contact.id)}>
+                  Delete
+                </button>
+              </li>
+            ))}
+          </ul>
+        </section>
       )}
     </>
   );
